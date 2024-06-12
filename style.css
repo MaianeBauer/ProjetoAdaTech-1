@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+font: 62.4%;
+--default-border: border: 0.1px solid rgb(0, 0, 0, 0.15);
+--default-border-radius: 1.2rem;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+.content{
+    display: grid;
+    grid-template-areas:
+    ". . . . . " 
+    ". hero . form . "
+    ". hero . form . "
+    ". . . . .";
+
+    gap: 8.5rem;
+}
+
+main{
+    grid-area: form;
+}
+aside{
+    grid-area: hero;
+}
+aside h1{
+    font-family: "Cute Font", sans-serif;
+    font-size: 84px;
+    font-weight: 500;
+   line-height: 75px;
+   text-align: center;
+}
+aside h1 span ,  main h2 span{
+    color: #FF5878;
+}
+main{
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid rgb(0, 0, 0, 0.95);
+    padding: 4.4rem 5.7rem;
+    border-radius: var(--default-border-radius);
+    position: relative;
+}
+main h2{
+    max-width: 42rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+main .actions{
+    display: flex;
+    flex-flow: column wrap;
+}
+main .actions a {
+    font-size: 2.4rem;
+    text-decoration: none;
+    border-radius: 2.2rem;
+    height: 5.5rem;
+    background-color: #f0aa39;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+main .actions a + a{
+    background-color: #FF5878;
+    margin-top: 4.8rem;
+}
+main header{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+main header i {
+
+    font-size: 2.4rem;
+    color: #FF5878; ;
+}
+main footer p{
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+main footer a{
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #000;
+}
+main form{
+    margin-top:1.6rem ;
+}
+main form label{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    display: block;
+
+}
+main form :is(input,select) {
+    width: 489px;
+    height: 5.5rem;
+    background-color: #FFFFFF;
+    border:var(--default-border);
+    border-radius: var(--default-border-radius);
+}
+main form select{
+    appearance: none;
+}
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+    top: 1.6rem;
+    right: 1.6rem;
+    content: '\f6be' ;
+    font-family: 'Font Awesome 6 Free' ;
+    font-weight: 600;
+    font-size: 2.4rem;
+    position: absolute;
+    z-index: 1;
+}
+
+main form input + button {
+    position: absolute;
+    right: -3.8rem;
+    top:calc(2.8rem + 2.5rem);
+    background-color: transparent;
+    border: none;
+    color: #f82c51;
+    font-size: 2.4rem;
+    cursor: pointer;
+
+
+}
+main form .points{
+    position: relative;
+}
+div ul li h3{
+    margin-top: 1.6rem ;
+    font-size:2.4rem ;
+    font-family: "Cute Font", sans-serif;
+}
+div ul li h3 button{
+    margin-top: 1.6rem ;
+    font-size:1.4rem ;
+    margin-left: 1.6rem;
+    background-color: #FF5878;
+    color: #FFFFFF;
+}
+div ul li h3 button:hover{
+color: #FF5878;
+background-color: #000;
+}
+footer p span{
+    color: #FF5878;
+    font-family: "Cute Font", sans-serif;
+    font-size: 2.6rem;
+}
